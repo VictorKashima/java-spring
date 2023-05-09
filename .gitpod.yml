@@ -3,4 +3,3 @@ image:
 
 tasks:
   - before: bash ./script.sh
-  - init: mysql -u root -e "CREATE DATABASE applicationdb"
