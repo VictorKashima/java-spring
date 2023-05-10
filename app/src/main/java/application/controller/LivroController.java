@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import application.model.Livro;
-import application.model.LivroRepository;
+import application.model.LivrosRepository;
 
 @Controller
 public class LivroController {
 
     @Autowired
-    private LivroRepository livroRepo;
+    private LivrosRepository livroRepo;
 
     @RequestMapping("/livro")
     public String list(Model model) {
