@@ -4,6 +4,8 @@
     <head>
         <meta charset="UTF-8" />
         <title>Home</title>
+
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
     </head>
     <body>
         <h1>Olá Spring!!!</h1>

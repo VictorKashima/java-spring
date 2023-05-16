@@ -3,18 +3,18 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <title>Excluir Livro</title>
+        <title>Excluir Genero</title>
 
         <link rel="stylesheet" href="../css/bootstrap.min.css">
     </head>
     <body>
 
         <div class="container">
-            <h1>Excluir Livro</h1>
-            <a href="/livro" class="btn btn-primary">Voltar</a>
-            <p>Deseja remover o livro <b>"${livro.titulo}"</b>?</p>
-            <form action="/delete" method="post">
-                <input type="hidden" name="id" value="${livro.id}" />
+            <h1>Excluir Genero</h1>
+            <a href="/genero" class="btn btn-primary">Voltar</a>
+            <p>Deseja remover o genero <b>"${genero.nome}"</b>?</p>
+            <form action="/genero-delete" method="post">
+                <input type="hidden" name="id" value="${genero.id}" />
                 <button type="submit" class="btn btn-danger">Excluir</button>
             </form>
         </div>

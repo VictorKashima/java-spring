@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <title>Atualizar Livro</title>
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
     </head>
     <body>
 
@@ -16,7 +16,10 @@
                 <input type="hidden" name="id" value="${livro.id}" />
                 <div class="form-group">
                     <label for="titulo">Titulo</label>
-                    <input type="text" name="titulo" class="form-control" value="${livro.titutlo}" />
+                    <input type="text" name="titulo" class="form-control" value="${livro.titulo}" />
+
+                    <label for="isbn">Isbn</label>
+                    <input type="text" name="isbn" class="form-control" value="${livro.isbn}" />
                 </div>
 
                 <br />
