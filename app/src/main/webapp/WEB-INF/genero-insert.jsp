@@ -11,8 +11,8 @@
 
         <div class="container">
             <h1>Novo Genero</h1>
-            <a href="/genero" class="btn btn-primary">Voltar</a>
-            <form action="/genero-insert" method="post">
+            <a href="/genero/list" class="btn btn-primary">Voltar</a>
+            <form action="/genero/genero-insert" method="post">
                 <div class="form-group">
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" class="form-control" />

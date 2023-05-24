@@ -11,7 +11,7 @@
     <body>
         <div class="container">
             <h1>Generos</h1>
-            <a href="/genero-insert" class="btn btn-primary">Novo Genero</a>
+            <a href="/genero/genero-insert" class="btn btn-primary">Novo Genero</a>
             <table class="table">
                 <tr>
                     <th>Id</th>
@@ -24,8 +24,8 @@
                         <td>${item.id}</td>
                         <td>${item.nome}</td>
                         <td>
-                            <a href="/genero-update?id=${item.id}" class="btn btn-warning">Editar</a>
-                            <a href="/genero-delete?id=${item.id}" class="btn btn-danger">Excluir</a>
+                            <a href="/genero/genero-update?id=${item.id}" class="btn btn-warning">Editar</a>
+                            <a href="/genero/genero-delete?id=${item.id}" class="btn btn-danger">Excluir</a>
                         </td>
                     </tr>
                 </c:forEach>
