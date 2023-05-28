@@ -52,6 +52,7 @@ public class LivroController {
     @RequestMapping("/update")
     public String update(Model model, @RequestParam("id") int id) {
         Optional<Livro> livro = livroRepo.findById(id);
+        model.addAttribute("generos", generoRepo.findAll());
 
         if(!livro.isPresent()) {
             return "redirect:/livro/list";
@@ -65,7 +66,8 @@ public class LivroController {
     public String update(
         @RequestParam("titulo") String titulo,
         @RequestParam("id") int id,
-        @RequestParam("isbn") String isbn
+        @RequestParam("isbn") String isbn,
+        @RequestParam("genero") Genero genero
     ) {
         Optional<Livro> livro = livroRepo.findById(id);
         if(!livro.isPresent()) {
@@ -74,6 +76,7 @@ public class LivroController {
 
         livro.get().setTitulo(titulo);
         livro.get().setIsbn(isbn);
+        livro.get().setGenero(genero);
 
         livroRepo.save(livro.get());
         return "redirect:/livro/list";

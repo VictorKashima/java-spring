@@ -1,0 +1,51 @@
+body > h1 {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: min(100vw - 20px, 1000px);
+    margin-inline: auto;
+}
+
+.home > h2 {
+    text-align: center;
+}
+
+.home-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid var(--white);
+    border-radius: 1rem;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+.home-menu > div {
+    min-width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.home-menu > div > h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.home-menu h4 {
+    background: #000;
+    padding: .5em 1em;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.home-menu a {
+    width: 100%;
+}

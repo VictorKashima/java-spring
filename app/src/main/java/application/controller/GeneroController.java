@@ -26,12 +26,12 @@ public class GeneroController {
         return "genero-list";
     }
 
-    @RequestMapping("/genero-insert")
+    @RequestMapping("/insert")
     public String insert() {
         return "genero-insert";
     }
 
-    @RequestMapping(value = "/genero-insert", method = RequestMethod.POST)
+    @RequestMapping(value = "/insert", method = RequestMethod.POST)
     public String generoInsert(@RequestParam("nome") String nome) {
         Genero genero = new Genero();
         genero.setNome(nome);
@@ -41,7 +41,7 @@ public class GeneroController {
         return "redirect:/genero/list";
     }
 
-    @RequestMapping("/genero-update")
+    @RequestMapping("/update")
     public String generoUpdate(Model model, @RequestParam("id") int id) {
         Optional<Genero> genero = generoRepo.findById(id);
 
@@ -53,7 +53,7 @@ public class GeneroController {
         return "genero-update";
     }
 
-    @RequestMapping(value = "/genero-update", method = RequestMethod.POST)
+    @RequestMapping(value = "/update", method = RequestMethod.POST)
     public String generoUpdate(
         @RequestParam("nome") String nome,
         @RequestParam("id") int id
@@ -69,7 +69,7 @@ public class GeneroController {
         return "redirect:/genero/list";
     }
 
-    @RequestMapping("/genero-delete")
+    @RequestMapping("/delete")
     public String generoDelete(Model model, @RequestParam("id") int id) {
         Optional<Genero> genero = generoRepo.findById(id);
 
@@ -81,7 +81,7 @@ public class GeneroController {
         return "genero-delete";
     }
 
-    @RequestMapping(value = "/genero-delete", method = RequestMethod.POST)
+    @RequestMapping(value = "/delete", method = RequestMethod.POST)
     public String generoDelete(@RequestParam("id") int id) {
         generoRepo.deleteById(id);
         return "redirect:/genero/list";

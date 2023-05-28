@@ -6,19 +6,24 @@
         <title>Biblioteca Sprint | Novo Gênero</title>
 
         <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/main.css">
     </head>
     <body>
 
         <div class="container">
-            <h1>Novo Genero</h1>
-            <a href="/genero/list" class="btn btn-primary">Voltar</a>
-            <form action="/genero/genero-insert" method="post">
+            <h1 class="title">Novo Gênero</h1>
+            <form action="/genero/insert" method="post">
                 <div class="form-group">
                     <label for="nome">Nome</label>
-                    <input type="text" name="nome" class="form-control" />
+                    <input type="text" name="nome" class="form-control" required/>
                 </div>
                 <br />
-                <button type="submit" class="btn btn-success">Salvar</button>
+
+                <div class="bottom-menu">
+                    <a href="/genero/list" class="btn btn-primary">Voltar</a>
+                    <a href="/" class="btn btn-secondary">Home</a>
+                    <button type="submit" class="btn btn-success">Salvar</button>
+                </div>
             </form>
         </div>
 
