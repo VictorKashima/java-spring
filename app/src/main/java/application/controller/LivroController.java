@@ -28,13 +28,13 @@ public class LivroController {
     @RequestMapping("/list")
     public String list(Model model) {
         model.addAttribute("livros", livroRepo.findAll());
-        return "list";
+        return "livro-list";
     }
 
     @RequestMapping("/insert")
     public String insert(Model model) {
         model.addAttribute("generos", generoRepo.findAll());
-        return "insert";
+        return "livro-insert";
     }
 
     @RequestMapping(value = "/insert", method = RequestMethod.POST)
@@ -58,7 +58,7 @@ public class LivroController {
         }
 
         model.addAttribute("livro", livro.get());
-        return "update";
+        return "livro-update";
     }
 
     @RequestMapping(value = "/update", method = RequestMethod.POST)
@@ -88,7 +88,7 @@ public class LivroController {
         }
 
         model.addAttribute("livro", livro.get());
-        return "delete";
+        return "livro-delete";
     }
 
     @RequestMapping(value = "/delete", method = RequestMethod.POST)
