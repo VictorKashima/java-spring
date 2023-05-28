@@ -5,7 +5,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <title>Novo Livro</title>
+        <title>Biblioteca Sprint | Novo Livro</title>
 
         <link rel="stylesheet" href="../css/bootstrap.min.css">
     </head>

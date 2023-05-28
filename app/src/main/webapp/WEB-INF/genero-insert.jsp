@@ -3,7 +3,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <title>Novo Genero</title>
+        <title>Biblioteca Sprint | Novo Gênero</title>
 
         <link rel="stylesheet" href="../css/bootstrap.min.css">
     </head>

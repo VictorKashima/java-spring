@@ -3,7 +3,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <title>Excluir Livro</title>
+        <title>Biblioteca Sprint | Excluir Livro</title>
 
         <link rel="stylesheet" href="../css/bootstrap.min.css">
     </head>

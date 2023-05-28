@@ -3,7 +3,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <title>Atualizar Livro</title>
+        <title>Biblioteca Sprint | Atualizar Livro</title>
 
         <link rel="stylesheet" href="../css/bootstrap.min.css">
     </head>
