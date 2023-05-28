@@ -14,7 +14,7 @@
         <div class="container">
             <h1>Novo Livro</h1>
             <a href="/livro/list" class="btn btn-primary">Voltar</a>
-            <form action="/list/insert" method="post">
+            <form action="/livro/insert" method="post">
                 <div class="form-group">
                     <label for="titulo">Título</label>
                     <input type="text" name="titulo" class="form-control" />

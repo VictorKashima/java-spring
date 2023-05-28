@@ -30,6 +30,9 @@ public class Livro {
     public String getIsbn() {
         return isbn;
     }
+    public Genero getGenero() {
+        return genero;
+    }
 
     public void setId(int id) {
         this.id = id;
@@ -39,6 +42,9 @@ public class Livro {
     }
     public void setIsbn(String isbn) {
         this.isbn = isbn;
+    }
+    public void setGenero(Genero genero) {
+        this.genero = genero;
     }
     
 }

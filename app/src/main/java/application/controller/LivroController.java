@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import application.model.Livro;
 import application.model.LivrosRepository;
+import application.model.Genero;
 import application.model.GenerosRepository;
 
 @Controller
@@ -37,10 +38,11 @@ public class LivroController {
     }
 
     @RequestMapping(value = "/insert", method = RequestMethod.POST)
-    public String insert(@RequestParam("titulo") String titulo, @RequestParam("isbn") String isbn) {
+    public String insert(@RequestParam("titulo") String titulo, @RequestParam("isbn") String isbn, @RequestParam("genero") Genero genero) {
         Livro livro = new Livro();
         livro.setTitulo(titulo);
         livro.setIsbn(isbn);
+        livro.setGenero(genero);
 
         livroRepo.save(livro);
 
