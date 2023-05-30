@@ -26,7 +26,7 @@
                     <label for="genero">Gênero</label>
                     <select name="genero" class="form-control" required>
                         <c:forEach var="item" items="${generos}">
-                            <option value="${item.id}">${item.nome}</option>
+                            <option ${livro.genero.id == item.id ? "selected" : ""} value="${item.id}">${item.nome}</option>
                         </c:forEach>
                     </select>
                 </div>

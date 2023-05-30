@@ -20,7 +20,7 @@
                 <div class="books">
                     <h2>Livros</h2>
                     <c:forEach items="${livros.subList(livros.size() - 3, livros.size())}" var="item">
-                        <h4>${item.titulo}</h4>
+                        <h4>${item.id} - ${item.titulo}</h4>
                     </c:forEach>
                     <a href="livro/list" class="btn btn-info">Ver mais</a>
                 </div>
@@ -28,7 +28,7 @@
                 <div class="genders">
                     <h2>Gêneros</h2>
                     <c:forEach items="${generos.subList(generos.size() - 3, generos.size())}" var="item">
-                        <h4>${item.nome}</h4>
+                        <h4>${item.id} - ${item.nome}</h4>
                     </c:forEach>
                     <a href="genero/list" class="btn btn-info">Ver mais</a>
                 </div>

@@ -12,7 +12,8 @@
     --green-light: #A2D9AF;
     --gray-light: #DADADA;
     --beige: #ECE3D0;
-    --background: linear-gradient(180deg, #002, #003);
+    --book-background: rgba(255, 255, 255, .2);
+    --background: linear-gradient(180deg, #003, #005);
 }
 
 html {

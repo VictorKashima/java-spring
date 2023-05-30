@@ -40,7 +40,7 @@ body > h1 {
 }
 
 .home-menu h4 {
-    background: #000;
+    background: var(--book-background);
     padding: .5em 1em;
     border-radius: 10px;
     width: 100%;
